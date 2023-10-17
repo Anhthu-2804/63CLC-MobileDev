@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/main_layout"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:gravity="center"
+        android:layout_marginTop="40dp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="Let's choose any color u like!!"
+        android:textSize="25dp" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_margin="20dp"
+        android:layout_gravity="center"
+        android:shadowRadius="0"
+        android:background="@drawable/square_button"
+        android:textColor="#FFFFFF"
+        android:text="Press me"
+        android:textSize="20dp"
+        android:onClick="changeBackgroundColor"/>
+
+
+</LinearLayout>

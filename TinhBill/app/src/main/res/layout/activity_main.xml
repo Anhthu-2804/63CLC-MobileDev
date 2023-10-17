@@ -1,0 +1,64 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <EditText
+        android:id="@+id/amountEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nhập số tiền đã mua" />
+
+    <!-- Danh sách thức uống và giá cả -->
+    <CheckBox
+        android:id="@+id/coffeeCheckBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cà phê - 20,000 VND" />
+    <CheckBox
+        android:id="@+id/teaCheckBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Trà - 15,000 VND" />
+    <!-- Thêm các mục thức uống khác tương tự -->
+
+    <CheckBox
+        android:id="@+id/waterCheckBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Trà - 0 VND" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tính hóa đơn"
+        android:onClick="calculateBill" />
+
+    <!-- Các TextView hiển thị thông tin -->
+    <TextView
+        android:id="@+id/billTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Tổng bill: " />
+
+    <TextView
+        android:id="@+id/taxTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Thuế 8%: " />
+
+    <TextView
+        android:id="@+id/pointsTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Điểm 10%: " />
+
+    <!-- TextView để hiển thị danh sách thức uống đã chọn -->
+    <TextView
+        android:id="@+id/orderTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Danh sách thức uống: " />
+
+</LinearLayout>
