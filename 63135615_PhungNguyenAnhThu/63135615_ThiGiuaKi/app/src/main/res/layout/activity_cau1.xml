@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/cardview_dark_background"
+    android:backgroundTint="@color/blue"
+    android:orientation="vertical">
+
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="30dp"
+        android:textSize="30dp"
+        android:text="Cau 1" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Số a"
+            android:textSize="20dp"
+            android:layout_gravity="center_vertical"
+            android:paddingEnd="16dp"/>
+
+
+        <EditText
+            android:id="@+id/editTextNumbera"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10"
+            android:inputType="number" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Số b"
+            android:textSize="20dp"
+            android:layout_gravity="center_vertical"
+            android:paddingEnd="16dp"/>
+
+        <EditText
+            android:id="@+id/editTextNumberb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10"
+            android:inputType="number" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/buttonResult"
+        android:layout_margin="30dp"
+        android:layout_width="100dp"
+        android:layout_gravity="center"
+        android:layout_height="wrap_content"
+        app:cornerRadius="10dp"
+        android:text="a+b" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Result"
+            android:textSize="30dp"
+            android:layout_margin="10dp"
+            android:layout_gravity="center_vertical"
+            android:paddingEnd="16dp"/>
+
+        <EditText
+            android:id="@+id/editResult"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:ems="10"
+            android:inputType="number" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/buttonBack"
+        android:layout_margin="30dp"
+        android:layout_width="100dp"
+        android:layout_gravity="center"
+        android:layout_height="wrap_content"
+        app:cornerRadius="10dp"
+        android:text="Back" />
+
+
+</LinearLayout>
