@@ -4,11 +4,11 @@ plugins {
 }
 
 android {
-    namespace = "com.anhthu.recycleview"
+    namespace = "com.anhthu.vieccanlam"
     compileSdk = 34
 
     defaultConfig {
-        applicationId = "com.anhthu.recycleview"
+        applicationId = "com.anhthu.vieccanlam"
         minSdk = 21
         targetSdk = 34
         versionCode = 1
@@ -30,7 +30,7 @@ android {
 }
 
 dependencies {
-    implementation ("androidx.recyclerview:recyclerview:1.1.0")
+
     implementation("androidx.appcompat:appcompat:1.6.1")
     implementation("com.google.android.material:material:1.10.0")
     implementation("androidx.constraintlayout:constraintlayout:2.1.4")
